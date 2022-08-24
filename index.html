@@ -35,7 +35,6 @@
           </div>
         <div class="offcanvas-body">
           <!-- 1 -->
-          <div class="nav-item dropdown text-decoration-none mt-2">
               <ul class="nav-item dropdown nav-items-hide">
                 <a
                   class="nav-link dropdown-toggle text-light hover-brown fontsize-8"
@@ -53,9 +52,8 @@
                   <li><a class="dropdown-item hover-brown" href="#">SMM Services</a></li>
                 </ul>
               </ul>
-            </div>
             <!-- 2 -->
-            <div class="nav-item dropdown mt-2">
+           
               <div class="nav-item dropdown nav-items-hide">
                 <a
                   class="nav-link dropdown-toggle text-light hover-brown fontsize-8"
@@ -73,9 +71,7 @@
                   <li><a class="dropdown-item hover-brown" href="#">SMM Services</a></li>
                 </ul>
               </div>
-            </div>
             <!-- 3 -->
-            <div class="nav-item dropdown mt-2">
               <div class="nav-item dropdown nav-items-hide">
                 <a
                   class="nav-link dropdown-toggle text-light hover-brown fontsize-8"
@@ -93,9 +89,7 @@
                   <li><a class="dropdown-item hover-brown" href="#">SMM Services</a></li>
                 </ul>
               </div>
-            </div>
             <!-- 4 -->
-            <div class="nav-item dropdown mt-2">
               <div class="nav-item dropdown nav-items-hide">
                 <a
                   class="nav-link dropdown-toggle text-light hover-brown fontsize-8"
@@ -113,9 +107,7 @@
                   <li><a class="dropdown-item hover-brown" href="#">SMM Services</a></li>
                 </ul>
               </div>
-            </div>
             <!-- 5 -->
-            <div class="nav-item dropdown mt-2">
               <div class="nav-item dropdown nav-items-hide">
                 <a
                   class="nav-link dropdown-toggle text-light hover-brown fontsize-8"
@@ -133,7 +125,6 @@
                   <li><a class="dropdown-item hover-brown" href="#">SMM Services</a></li>
                 </ul>
               </div>
-            </div>
         </div>
       </div>
       <div class="background-1">
@@ -146,7 +137,7 @@
                 <li class="nav-item">
                   <div class="nav-item dropdown brown-text nav-items-hide">
                     <a
-                      class="nav-link dropdown-toggle brown-text fontsize-8"
+                      class="nav-link  brown-text fontsize-8"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -288,17 +279,24 @@
                   </div>
                 </li>
                 <!-- 6 -->
-                <li class="nav-item">
-                  <p class="text-light hover-brown mx-1 marg-top nav-items-hide fontsize-8 ">Contacts</p>
+                <li class="nav-item ">
+                  <p class="text-light hover-brown mx-1 marg-top nav-items-hide fontsize-8">Contacts</p>
                 </li>
               </ul>
               <form class="d-flex" role="search">
                 <span class="text-light text-siz mob-number-top mt-1 pt-2 fontsize-8">
                   Call Us: <b>8 800 2563 123</b></span
                 > 
-                <input class=" input-bx " type="search" placeholder="Search" aria-label="Search"/>
-                <i class="bi bi-search text-light fs-6 mob-search-icon px-4 pt-2"></i>
-               
+                <!-- <input class=" input-bx " type="search" placeholder="Search" aria-label="Search"/>
+                <i class="bi bi-search text-light fs-6 mob-search-icon px-4 pt-2"></i> -->
+                <div class="dropdown dropstart mt-2 mx-4">
+                  <i class="bi bi-search text-light" type="button" data-bs-toggle="dropdown">
+                  </i>
+                  <ul class="dropdown-menu bg-transparent mt-4">
+                    <i><input class=" input-bx form-control" type="search" placeholder="Search" aria-label="Search"/>
+                      <button class="fontsize-8 text-blue custom-button-mob"><b>Search</b></button></i>
+                  </ul>
+                </div>
           <i
             class="bi-list d-block text-light fs-3"
             data-bs-toggle="offcanvas"
@@ -528,11 +526,11 @@
          <!-- Back big Word -->
      <div class="row gx-0">
       <div class=" d-flex justify-content-center relative-parent"><b class="background-word">DIGITAL</b> 
-         <div class=" absolute-child d-flex flex-column content-end mob-mini-icons mt-5 pt-5">
-          <i class="bi bi-tv mini-icon-1"></i>
-          <i class="bi bi-cart2 mini-icon-2"></i>
-          <i class="bi bi-life-preserver mini-icon-3"></i>
-          <i class="bi bi-pencil-square mini-icon-4"></i>
+         <div class=" d-flex flex-column mt-5 pt-5 fix-here">
+          <i class="bi bi-tv mini-icon-1 pop-up-icon"></i>
+          <i class="bi bi-cart2 mini-icon-2 pop-up-icon"></i>
+          <i class="bi bi-life-preserver mini-icon-3 pop-up-icon"></i>
+          <i class="bi bi-pencil-square mini-icon-4 pop-up-icon"></i>
       </div>
     </div>
         <!-- Big Top Sentances -->
@@ -574,27 +572,39 @@
      <div class="row d-flex mt-5">
       <div class="col-md-7 col-11 card d-flex flex-md-row flex-sm-column m-auto box-border border-0 relative-parent">
         <div class="mb-3">
-          <img class="colorful-icons mob-1 ms-5" src="./images/miniIcon1.png"/>
+          <div class="d-flex justify-content-center">
+          <div class=" miniIcon-1">
+             <p class="text-center mini-Icon-Txt fw-bolder text-light">.01</p>
+          </div>
+        </div>
         <div class=" card-body  text-center mt-5 pt-4">
           <h5 class="card-title text-blue font-100 fontWeight">SEO Consultancy</h5>
-          <p class="card-text text-blue fontsize-8">wid supting text below Lorem ilsum dolor sit amet, consectetur adipisicing asso a content.</p>
-          <p class="fontsize-8 text-lite-blue hover-brown">Read More<i class="bi bi-caret-right-fill "></i></p>
+          <p class="card-text other-blue-text fontsize-8">wid supting text below Lorem ilsum dolor sit amet, consectetur adipisicing asso a content.</p>
+          <p class="fontsize-small text-lite-blue hover-brown fw-bold">READ MORE <i class="bi bi-caret-right-fill "></i></p>
         </div>
       </div>
       <div class="mb-3">
-        <img class="colorful-icons mob-2 ms-5 " src="./images/miniIcon2.png"/>
+        <div class="d-flex justify-content-center">
+          <div class=" miniIcon-2 ">
+             <p class="text-center mini-Icon-Txt fw-bolder text-light">.02</p>
+          </div>
+        </div>
         <div class=" card-body text-center mt-5 pt-4">
         <h5 class="card-title text-blue font-100 fontWeight ">Competitor Analysis</h5>
-        <p class="card-text text-blue fontsize-8">wid supting text below Lorem ilsum dolor sit amet, consectetur adipisicing asso a content.</p>
-        <p class="fontsize-8 text-lite-blue hover-brown">Read More<i class="bi bi-caret-right-fill"></i></p>
+        <p class="card-text other-blue-text fontsize-8">wid supting text below Lorem ilsum dolor sit amet, consectetur adipisicing asso a content.</p>
+        <p class="fontsize-small text-lite-blue hover-brown fw-bold">READ MORE <i class="bi bi-caret-right-fill"></i></p>
       </div>
     </div>
     <div class="mb-3">
-      <img class="colorful-icons mob-3 ms-5" src="./images/miniIcon-3.png"/>
-      <div class=" card-body  text-center mt-5 pt-4">
+      <div class="d-flex justify-content-center">
+        <div class=" miniIcon-3 ">
+           <p class="text-center mini-Icon-Txt fw-bolder text-light">.03</p>
+        </div>
+      </div>
+      <div class=" card-body text-center mt-5 pt-4">
       <h5 class="card-title text-blue font-100 fontWeight">Social Media Marketing</h5>
-      <p class="card-text text-blue fontsize-8">wid supting text below Lorem ilsum dolor sit amet, consectetur adipisicing asso a widit content.</p>
-      <p class="fontsize-8 text-lite-blue hover-brown">Read More<i class="bi bi-caret-right-fill"></i></p>
+      <p class="card-text other-blue-text fontsize-8">wid supting text below Lorem ilsum dolor sit amet, consectetur adipisicing asso a widit content.</p>
+      <p class="fontsize-small text-lite-blue hover-brown fw-bold">READ MORE <i class="bi bi-caret-right-fill"></i></p>
     </div>
   </div>
       </div>
@@ -609,14 +619,14 @@
     </div>
     <div class="col-md-6 col-12 d-flex flex-column"> 
       <section class=" needing-width">
-      <p class="fontsize-8 text-blue fw-bold d-flex justify-content-cntr">ABOUT US</p>
-      <h3 class="fredoka-text text-blue d-flex justify-content-cntr">Boosts Your Website Traffic!</h3>
-      <h5 class="text-blue"> Ad nec Unum copiosae. Sea Lorem ipsum dolor sit amet consectetur qui muva.</h5>
-      <p class="text-start text-blue needing-width-2">Ea pro tibique comprehensam,  adiping suzen ini. Incidunt quis deserun
+      <p class="fontsize-8 text-blue fw-bold  ">ABOUT US</p>
+      <h3 class="fredoka-text text-blue ">Boosts Your Website Traffic!</h3>
+      <h5 class="other-blue-text">Ad nec Unum copiosae. Sea ex everti labores, ad<br/>option iuveret qui muva.</h5>
+      <p class="text-start other-blue-text needing-width-2">Ea pro tibique comprehensam,  adiping suzen ini. Incidunt quis deserun
        t magnam perferendis similique possimus
         ut soluta fugiat, veniam officiis rerum molestiae recusandae dicta fugit aliquam exercit
         ationem init animi admodum.</p>
-        <button type="button" class=" mob-cust-btn custom-button mt-3 mb-5" ><b>ABOUT US</b></button>
+        <button type="button" class=" mob-cust-btn custom-button-2 mt-3 mb-5" ><b>ABOUT US</b></button>
     </section>
   </div>
   </div>
@@ -625,8 +635,9 @@
 
 <!-- container-4 -->
 <div class="row bg-3 d-flex mb-5">
-  <div class="col-md-6 col-9  d-flex justify-content-end">
-    <div  iv class="width-size lh-1 pb-5 ">
+  <div class="col-md-2 col-0"></div>
+  <div class="col-md-3 col-12  d-flex justify-content-center">
+    <div  iv class="width-size lh-1 mt-4 ms-5">
       <p class="Gradient-mid-text d-inline size-of-text"><b class="">Let's work Together</b></p>
       <div class="lh-1">
       <p class="fontsize-8 text-blue width-sze mt-3">Do you know what it takes to grow your business online? Do you want to?</p>
@@ -635,43 +646,49 @@
       <p class="text-blue mini-font">INFO@EXAMPLE.COM</p>
     </div>
   </div>
-  <div class="col-md-6 col-4  d-flex  justify-content-start mrg-rt">
-    <img class=" mt-2 pt-1  size-of-img" src="./images/work-together-480x376.png"/>
+  <div class="col-md-5 col-12 ms-1">
+    <div class="d-flex ">
+    <img class="mt-2 pt-1 size-of-img" src="./images/work-together-480x376.png"/>
   </div>
+  </div>
+  <div class="col-md-2 col-0"></div>
 </div>
   <!-- container-4 End -->
 
 <!-- container-5-->
 <div class="row  mt-5 pt-5">
-  <div class="col-md-6 col-12 d-flex justify-content-end">
+  <div class="col-md-2 col-0"></div>
+  <div class="col-md-4 col-12 d-flex justify-content-end">
   <div class="row">
   <div class="row lh-1">
-    <div class="col-md-5 col-4"></div>
-    <div class="col-md-4 col-6">
+   
+    <div class="col-md-6 col-12 ms-5">
       <div class="row">
-        <p class=" col-12 text-blue mt-5 to-left">ABOUT US</p>
-        <h4 class=" col-12 font-styl  text-blue mb-5">What We Offer</h4>
+        <p class=" col-12 fontsize-8 fw-bold text-blue mt-5 mb-2">ABOUT US</p>
+        <h4 class=" col-12 font-styl  text-blue ">What We Offer</h4>
       </div>
     </div>
-    <div class="col-md-3 col-2"></div>
+    <div class="col-md-6 col-0"></div>
+  
   </div>
-  <div class="col-12 d-flex cont-center">
+  <div class="col-12 d-flex justify-content-end mb-5">
   <img class="img-sz " src="./images/VrGaming.png"/>
   </div>
   </div>
   </div>
-  <div class="col-md-6 col-12 mt-5">
+  <div class="col-md-4 col-12 mt-5">
   <div class="row cont-center">
     <div class="row">
       <div class="">
-        <div class="card box-shdw rounded-4 border-wide mt-4 mb-3 pop-up-2" >
+        <div class="card box-shdw rounded-5 border-wide mt-4 mb-3 pop-up-2" >
           <div class="card-body row">
             <div class="row">
               <div class="col-4 mt-3"><img class="sideIcon-size" src="./images/cont-5Img1.png"/></div>
               <div class="col-8 mt-3">
                 <h5 class="card-title text-blue fw-bold fs-6">CONSULTING</h5>
-                <p class="card-text text-start text-blue fontsize-8">Some quick example text to build on the card title and make up the bulk of the card's content.</p>    
+                <p class="card-text text-start other-blue-text fontsize-8">Some quick example text to build on the card title and make up the bulk of the card's content.</p>    
               </div>
+              
             </div>
             </div>
         </div>
@@ -679,13 +696,13 @@
     </div>
     <div class="row">
       <div class="">
-        <div class="card rounded-4 border-wide margn-l mb-3 pop-up-2" >
+        <div class="card rounded-5 border-wide margn-l mb-3 pop-up-2" >
           <div class="card-body row">
             <div class="row">
               <div class="col-4 mt-3"><img class="sideIcon-size" src="./images/cont-5Img2.png"/></div>
               <div class="col-8 mt-3">
                 <h5 class="card-title text-blue fw-bold fs-6">PRODUCTION</h5>
-                <p class="card-text text-start text-blue fontsize-8">Some quick example text to build on the card title and make up the bulk of the card's content.</p>    
+                <p class="card-text text-start other-blue-text fontsize-8">Some quick example text to build on the card title and make up the bulk of the card's content.</p>    
               </div>
             </div>
             </div>
@@ -694,13 +711,13 @@
     </div>
     <div class="row">
       <div class="">
-          <div class="card  rounded-4 border-wide mb-3 pop-up-2" >
+          <div class="card  rounded-5 border-wide mb-3 pop-up-2" >
             <div class="card-body row">
               <div class="row">
                 <div class="col-4 mt-3"><img class="sideIcon-size" src="./images/cont5Img3.png"/></div>
                 <div class="col-8 mt-3">
                   <h5 class="card-title text-blue fw-bold fs-6">SUPPORT</h5>
-                  <p class="card-text text-start text-blue fontsize-8">Some quick example text to build on the card title and make up the bulk of the card's content.</p>    
+                  <p class="card-text text-start other-blue-text fontsize-8">Some quick example text to build on the card title and make up the bulk of the card's content.</p>    
                 </div>
               </div>
               </div>
@@ -709,6 +726,7 @@
     </div>
   </div>
   </div>
+  <div class="col-md-2 col-0"></div>
   </div>
   
   <!-- container-5 End -->
@@ -717,22 +735,22 @@
    <div class="row mt-5 bg-4 ms-5 mb-5 pb-5">
     <div class="row mt-5"></div>
    <div class="col-md-2"></div>
-   <div class="col-md-2"><p class="fnt-s text-blue font-nunito lh-1">715</p><p class="text-blue fw-bold">SENT</p>
+   <div class="col-md-2 mt-2"><p class="fnt-s text-blue font-nunito lh-1">715</p><p class="text-blue fontsize-8 fw-bold">SENT</p>
     <div class="prog-back-col prog-width rounded-pill w3-tiny ">
       <div class="w3-container prog-shdw-1 prog-bar-1 rounded-pill" ></div>
     </div>
   </div>
-   <div class="col-md-2"><p class="fnt-s text-blue font-nunito lh-1">89%</p><p class="text-blue fw-bold">OPENED</p>
+   <div class="col-md-2 mt-2"><p class="fnt-s text-blue font-nunito lh-1">89%</p><p class="text-blue fontsize-8 fw-bold">OPENED</p>
     <div class="w3-light-grey prog-width rounded-pill w3-tiny">
       <div class="w3-container prog-shdw-2 prog-bar-2 rounded-pill" ></div>
     </div>
   </div>
-   <div class="col-md-2"><p class="fnt-s text-blue font-nunito lh-1">70%</p><p class="text-blue fw-bold">CLICKED</p>
+   <div class="col-md-2 mt-2"><p class="fnt-s text-blue font-nunito lh-1">70%</p><p class="text-blue fontsize-8 fw-bold">CLICKED</p>
     <div class="w3-light-grey  prog-width rounded-pill w3-tiny">
       <div class="w3-container prog-shdw-3 rounded-pill  prog-bar-3" ></div>
     </div>
   </div>
-   <div class="col-md-2"><p class="fnt-s text-blue font-nunito lh-1">94%</p><p class="text-blue fw-bold">GOALS</p>
+   <div class="col-md-2 mt-2"><p class="fnt-s text-blue font-nunito lh-1">94%</p><p class="text-blue fontsize-8 fw-bold">GOALS</p>
     <div class="w3-light-grey  prog-width rounded-pill w3-tiny">
       <div class="w3-container prog-shdw-4 rounded-pill prog-bar-4" ></div>
     </div>
@@ -792,7 +810,7 @@
   </div>
   <div class="col-md-4">
     <div class="row  lh-1 mob">
-      <p class="fontsize-8 text-blue fw-bold  cont-center">TESTIMONIALS</p>
+      <p class=" text-blue fontsize-small fw-bold cont-center mb-3">TESTIMONIALS</p>
       <p class="text-blue font-nunito fw-bolder fs-4 cont-center">What Our Client Say</p>
     </div>
     <div class="row">
@@ -805,7 +823,7 @@
               </p>
               <div class="lh-1">
               <p class="fw-bold  text-blue ms-4 ps-1">Denis Robinson</p>
-              <p class="text-blue fontsize-small ms-4 ps-1">Customer</p>
+              <p class="other-blue-text fontsize-8 ms-4 ps-1">Customer</p>
             </div>
             </div>
             <div class="item">
@@ -814,7 +832,7 @@
                </p>
                 <div class="lh-1">
                   <p class="fw-bold  text-blue ms-4 ps-1">Silvia Garden</p>
-                  <p class="text-blue fontsize-small ms-4 ps-1">Customer</p>
+                  <p class="other-blue-text fontsize-8 ms-4 ps-1">Customer</p>
                 </div>
             </div>
             <div class="item">
@@ -823,7 +841,7 @@
               </p>
               <div class="lh-1">
               <p class="fw-bold text-blue ms-4 ps-1">Tommy Dents</p>
-              <p class="text-blue fontsize-small ms-4 ps-1">Customer</p>
+              <p class="other-blue-text fontsize-8 ms-4 ps-1">Customer</p>
               </div>
             </div>
         </div>
@@ -835,10 +853,10 @@
 </div>
 <div class="row mt-5 pt-3">
   <div class="col-md-2"></div>
-  <div class="col-md-2 col-12 d-flex justify-content-center mt-3"><img class="img-sze " src="./images/oneOf4-1.png"/></div>
-  <div class="col-md-2 col-12 d-flex justify-content-center mt-3"><img class="img-sze" src="./images/oneOf4-2.png"/></div>
-  <div class="col-md-2 col-12 d-flex justify-content-center mt-3"><img class="img-sze" src="./images/oneOf4-3.png"/></div>
-  <div class="col-md-2 col-12 d-flex justify-content-center mt-3"><img class="img-sze" src="./images/oneOf4-4.png"/></div>
+  <div class="col-md-2 col-12 d-flex justify-content-center mt-5"><img class="img-sze " src="./images/oneOf4-1.png"/></div>
+  <div class="col-md-2 col-12 d-flex justify-content-center mt-5"><img class="img-sze" src="./images/oneOf4-2.png"/></div>
+  <div class="col-md-2 col-12 d-flex justify-content-center mt-5"><img class="img-sze" src="./images/oneOf4-3.png"/></div>
+  <div class="col-md-2 col-12 d-flex justify-content-center mt-5"><img class="img-sze" src="./images/oneOf4-4.png"/></div>
   <div class="col-md-2"></div>
 </div>
 
@@ -850,7 +868,7 @@
 
 <div class="col-12 d-flex justify-content-center">
   <div class="row text-center">
-    <p class=" fontsize-8 text-blue fw-bold">BLOG</p>
+    <p class=" fontsize-8 text-blue fw-bold mb-1">BLOG</p>
     <h3 class="font-nunito text-blue">Latest News</h3>
   </div>
 </div>
@@ -869,88 +887,103 @@
 
    <!-- container-10 -->
    <div class="row bg-6 mt-5">
-    <div class="row">
-
-    </div>
-    <div class="row d-flex justify-content-center">
-      <div class="card mx-2 box-sz border-0 mb-4">
-        <div class="card-body">
-          <h5 class="card-title fontsize-small grey-text">August 2, 2020</h5>
-          <p class="card-text font-nunito font-semi-big text-blue">How to Increase Your ROI Thorugh Scientific SEM?</p>
-           <div class="row">
-          <p class="col-6 text-lite-blue fontsize-small fw-bolder mt-5 pt-3">READ MORE</p>
-          <i class="col-6 d-flex justify-content-end bi bi-share-fill mt-5 pt-3 icn-sz"></i>
-        </div>
+     <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 mb-5">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- 1 -->
+            <div class="card mx-2 box-sz border-0 mb-4">
+              <div class="card-body">
+                <h5 class="card-title fontsize-small grey-text">August 2, 2020</h5>
+                <p class="card-text font-nunito font-semi-big text-blue">How to Increase Your ROI Thorugh Scientific SEM?</p>
+                 <div class="row">
+                <p class="col-6 text-lite-blue fontsize-small fw-bolder mt-5 pt-3">READ MORE</p>
+                <i class="col-6 d-flex justify-content-end bi bi-share-fill mt-5 pt-3 icn-sz"></i>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- 2 -->
+            <div class="card mx-2 box-sz border-0 mb-4">
+              <div class="card-body">
+                <h5 class="card-title fontsize-small grey-text">August 1, 2020</h5>
+                <p class="card-text font-nunito font-semi-big text-blue">Simple Ways to Optimize<br>Your Website For SEO</p>
+                 <div class="row">
+                <p class="col-6 text-lite-blue fontsize-small fw-bolder mt-5 pt-3">READ MORE</p>
+                <i class="col-6 d-flex justify-content-end bi bi-share-fill mt-5 pt-3 icn-sz"></i>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- 3 -->
+            <div class="card mx-2 box-sz border-0 mb-4">
+              <div class="card-body">
+                <h5 class="card-title fontsize-small grey-text">August 1, 2020</h5>
+                <p class="card-text font-nunito font-semi-big text-blue"><b>The Basics of Blogging Search Engine Optimization</b></p>
+                <div class="row">
+                <p class="col-6 text-lite-blue fontsize-small fw-bolder mt-5 pt-3">READ MORE</p>
+                <i class="col-6 d-flex justify-content-end bi bi-share-fill mt-5 pt-3 icn-sz"></i>
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- 2 -->
-      <div class="card mx-2 box-sz border-0 mb-4">
-        <div class="card-body">
-          <h5 class="card-title fontsize-small grey-text">August 1, 2020</h5>
-          <p class="card-text font-nunito font-semi-big text-blue">Simple Ways to Optimize<br>Your Website For SEO</p>
-           <div class="row">
-          <p class="col-6 text-lite-blue fontsize-small fw-bolder mt-5 pt-3">READ MORE</p>
-          <i class="col-6 d-flex justify-content-end bi bi-share-fill mt-5 pt-3 icn-sz"></i>
-        </div>
-        </div>
-       
+      <div class="col-md-2"></div>
+     </div>
+     
+      <div class="col-md-2 col-0"></div>
+      <div class="col-md-4 col-6">
+        <div class=" px-2">
+          <div class="">
+           <div class="row "><i class="bi bi-chat-left text-light msg-icn-sz"></i></div>
+           <div class="lh-1">
+           <div class="row "><p class="Gradient-bottom-text">Get Free SEO</p></div>
+           <div class="row "><p class="Gradient-bottom-text">Analysis?</p></div>
+         </div>
+         <div>
+          <div class="text-light medium-txt-sz p-0">Ne summo dictas psum dolors amet vocent ei<br> vim, case aspernatur debitis vim te.</div>
+         </div>
+          </div>
+         </div>
       </div>
-      <!-- 3 -->
-      <div class="card mx-2 box-sz border-0 mb-4">
-        <div class="card-body">
-          <h5 class="card-title fontsize-small grey-text">August 1, 2020</h5>
-          <p class="card-text font-nunito font-semi-big text-blue"><b>The Basics of Blogging Search Engine Optimization</b></p>
-          <div class="row">
-          <p class="col-6 text-lite-blue fontsize-small fw-bolder mt-5 pt-3">READ MORE</p>
-          <i class="col-6 d-flex justify-content-end bi bi-share-fill mt-5 pt-3 icn-sz"></i>
+      <div class="col-md-4 col-6">
+        <div class="row">
+          <div class="col-6"><input  type="text" class="form-control input-row-1  inp-col" placeholder="Your Name*"></div>
+          <div class="col-6"><input  type="text" class="form-control input-row-1 form-control inp-col" placeholder="Email*"></div>
         </div>
-        </div>
-      </div>
-    </div>
-    <div class="row mt-4 mb-5">
-      <div class="col-md-5 col-12 d-flex justify-content-end px-2">
-       <div class="">
-        <div class="row "><i class="bi bi-chat-left text-light msg-icn-sz"></i></div>
-        <div class="lh-1">
-        <div class="row "><p class="Gradient-bottom-text">Get Free SEO</p></div>
-        <div class="row "><p class="Gradient-bottom-text">Analysis?</p></div>
-      </div>
-        <div class="row text-light medium-txt-sz">Ne summo dictas psum dolors amet vocent ei<br> vim, case aspernatur debitis vim te.</div>
-       </div>
-      </div>
-      <div class="col-1"></div>
-       <div class="col-md-6 col-12">
-        <div class="row"> <input  type="text" class="form-control input-row-1 mx-2 inp-col" placeholder="Your Name*">
-          <input  type="text" class="form-control input-row-1 form-control inp-col" placeholder="Email*"></div>
         <div class="row mt-3">
-          <div class="row"> <input  type="text" class="form-control input-row-1 mx-2 inp-col" placeholder="phone">
-            <input  type="text" class="form-control input-row-1 form-control inp-col" placeholder="Website*"></div>
+          <div class="col-6"><input  type="text" class="form-control input-row-1 inp-col" placeholder="Phone"></div>
+          <div class="col-6 "> <input  type="text" class="form-control input-row-1 inp-col" placeholder="Website*"></div>
         </div>
         <div class="row mt-3">
-          <div class="relative-parent">
-            <textarea class=" form-control input-row-3 inp-col " placeholder="Message" aria-label="With textarea"> </textarea>
-            <i class="bi bi-arrow-clockwise text-light place-icon icon-back-green fontsize-8"></i>
+          <div class="col-12 pe-0">
+            <textarea class=" form-control input-row-3 inp-col" placeholder="Messsage" aria-label="With textarea"></textarea>
+            <!-- <i class="bi bi-arrow-clockwise text-light place-icon icon-back-green fontsize-8"></i> -->
+            <button class="fontsize-8 text-blue custom-button mt-4 mb-5">SEND MESSAGE</button>
+          </div>
         </div>
-        </div>
-        <div>
-        <div class="mt-4"><button class="fontsize-8 text-blue custom-button"><b>CONTACT TODAY</b></button></div>
       </div>
-       </div>
-    </div>
-   </div>
-   <!-- container-10 End -->
+      <div class="col-md-2 col-0"></div>
+   
+  </div>
+  <!-- container-10 End -->
 
     <!-- container-11 -->
     <div class="row bg-blue">
       <div class="row mb-5">
         <div class="col-md-2 col-12"></div>
         <div class="col-md-8 col-12">
-          <div class="row mt-5">
-            <div class="col-md-3 text-light"><p class="medium-txt-sz">8 800 2534 236 email@yoursite.com</p></div>
-            <div class="col-md-3 text-light"><p class="medium-txt-sz">27 Division st, New York, NY 10002, United States</p></div>
-            <div class="col-md-6">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control holder-col border-0" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="row mt-5 d-flex">
+            <div class="col-md-3 col-12 text-light mob-centr d-flex flex-row"><img class="last-icons me-2" src="./images/img_box-1.png"/><p class="medium-txt-sz">8 800 2534 236 email@yoursite.com</p></div>
+            <div class="col-md-3 col-12 text-light d-flex flex-row"><img class="last-icons mt-1 me-2" src="./images/img_box-2.png"/><p clac ss="medium-txt-sz">27 Division st, New York, NY 10002, United States</p></div>
+            <div class="col-md-6 col-12">
+              <!-- 2 -->
+              <div class="input-group mb-3  ">
+                <input type="text" class="form-control holder-col border-0 mob-centr inp-col-last" placeholder="Email Address" aria-describedby="basic-addon2">
                 <button class="fontsize-8 text-blue custom-button-last rounded"><b>SUBSCRIBE NOW</b></button>
               </div>
             </div>
@@ -959,14 +992,14 @@
         </div>
         <div class="col-md-2"></div>
       </div>
-      
-  <div class="row">
-    
+  <div class="row"> 
     <div class="col-md-2"></div>
     <div class="col-md-2">
     <div class="row">
       <p class="text-light fw-bolder">About</p>
-        <p class="text-light medium-txt-sz">We focus on the needs of small to medium business to improve and grow their return.</p>
+        <p class="text-light medium-txt-sz w-5 px-3 lh-md">We focus on the needs of small
+           to meddle market business to
+            improve and grow their return.</p>
       <div class="">
         <i class="bi-twitter text-light socialM-icon-sz me-2"></i>
         <i class="bi-facebook text-light socialM-icon-sz mx-2"></i>
@@ -980,18 +1013,38 @@
     <div class="col-md-2">
       <div class="">
       <p class="text-light fw-bolder">Services</p>
-      <p class="text-light medium-txt-sz">SEO Marketing<br>SEO Services<br>SEO Services<br>Pay Per Click<br>Social MEdia<br>SEO Audit</p>
+      <ul class=" text-light medium-txt-sz ps-0 lh-md ul-hover-brown">
+        <p class="mb-0 ms-0 medium-txt-sz">SEO Marketing</p>
+        <p class="mb-0 ms-0 medium-txt-sz">SEO Services</p>
+        <p class="mb-0 ms-0 medium-txt-sz">Pay Per Click</p>
+        <p class="mb-0 ms-0 medium-txt-sz">Social MEdia</p>
+        <p class="mb-0 ms-0 medium-txt-sz">SEO Audit</p>
+     </ul>
     </div>
     </div>
     <div class="col-md-2">
       <p class="text-light fw-bolder">Community</p>
-      <p class="text-light medium-txt-sz">Our Product<br>Documentation<br>Our Services<br>Company<br>What We Do?</p>
+      <ul class="text-light medium-txt-sz ps-0 lh-md ul-hover-brown">
+        <P class="mb-0 medium-txt-sz ">Our Product</P>
+        <P class="mb-0 medium-txt-sz ">Documentation</P>
+        <p class="mb-0 medium-txt-sz ">Our Services</p>
+        <p class="mb-0 medium-txt-sz ">Company</p>
+        <p class="mb-0 medium-txt-sz ">What We Do?</p>
+      </ul>
     </div>
     <div class="col-md-2">
       <p class="text-light fw-bolder">Quick Links</p>
-      <p class="text-light medium-txt-sz hover-brown">Home<br>About Us<br>Services<br>Pricing<br>Our Cases</p>
+      <ul class="text-light medium-txt-sz ps-0 lh-md ul-hover-brown">
+        <P class="mb-0 medium-txt-sz ">Home</P>
+        <P class="mb-0 medium-txt-sz ">About Us</P>
+        <p class="mb-0 medium-txt-sz ">Services</p>
+        <p class="mb-0 medium-txt-sz ">Pricing</p>
+        <p class="mb-0 medium-txt-sz ">Our Cases</p>
+      </ul>
+      <br><br><br><br></p>
     </div>
     <div class="col-md-2"></div>
+  </div>
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
@@ -1001,15 +1054,15 @@
           </div>
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-1 brown-text d-flex justify-content-end "><div class="">
-          <div class="row"></div>
-          <div class="row end-button"><a href="#" class="text-decoration-none">^</a></div>
+        <div class=" brown-te fix-here-2"><div class="">
+          <div class="row "></div>
+          <div class="row end-button "><a href="#" class="text-decoration-none tex-lit">^</a></div>
           <div class="row"></div>
         </div>
       </div>
   </div>
+</div>
      <!-- container-11 End -->
-
 
 
 
