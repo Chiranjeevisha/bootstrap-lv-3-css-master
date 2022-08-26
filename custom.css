@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Sans+Display:wght@700&family=Nunito:wght@700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@700;900&display=swap");
 
 p,
 span {
@@ -94,12 +94,12 @@ span {
     margin-right: 20px !important;
   }
 }
-
 .gradient-top-text {
   background: #fe506a;
   background: linear-gradient(to right, #fe506a 0%, #f99c4c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
   font-size: 5vw;
   text-decoration: none;
   margin-top: 60px;
@@ -107,9 +107,10 @@ span {
 .background-word {
   position: absolute;
   top: -20px;
-  color: black;
-  font-family: "Fredoka One", cursive;
-  opacity: 0.1;
+  color: rgb(0, 0, 0);
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  opacity: 0.15;
   font-size: 19vw;
 }
 .z-index {
@@ -337,7 +338,7 @@ span {
   width: 400px !important;
 }
 .fredoka-text {
-  font-family: "Fredoka One", cursive;
+  font-family: "Nunito", sans-serif !important;
 }
 
 .needed-width {
@@ -397,6 +398,10 @@ span {
   display: flex;
   justify-content: center;
   bottom: 135px;
+  transition: all 0.2s ease-in-out;
+}
+.miniIcon-1:hover {
+  transform: scale(1.19);
 }
 .miniIcon-2 {
   background: url(./images/miniIcon2.png);
@@ -409,6 +414,10 @@ span {
   display: flex;
   justify-content: center;
   bottom: 135px;
+  transition: all 0.2s ease-in-out;
+}
+.miniIcon-2:hover {
+  transform: scale(1.19);
 }
 .miniIcon-3 {
   background: url(./images/miniIcon-3.png);
@@ -421,6 +430,10 @@ span {
   display: flex;
   justify-content: center;
   bottom: 135px;
+  transition: all 0.2s ease-in-out;
+}
+.miniIcon-3:hover {
+  transform: scale(1.19);
 }
 .custom-button-2 {
   border-color: #3c3664;
@@ -515,12 +528,12 @@ span {
   background: linear-gradient(to right, #fe506a 0%, #f99c4c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Secular One", sans-serif;
-}
-.size-of-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 55px;
 }
+
 .mini-font {
   font-size: 50%;
 }
@@ -667,8 +680,8 @@ span {
 }
 .bg-5 {
   background-image: url(./images/background-5.png);
-  height: 100vh;
-  width: 105%;
+  height: 135vh;
+  width: 102%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -721,10 +734,9 @@ span {
 .bg-doublequotes {
   background-image: url(./images/bg-doublequote.png);
   height: 60vh !important;
-  width: 104% !important;
-
+  width: 130% !important;
+  margin-left: -100px !important;
   /* Center and scale the image nicely */
-
   background-repeat: no-repeat;
 }
 
@@ -752,11 +764,77 @@ span {
 .msg-icn-sz {
   font-size: 250%;
 }
+.cont-7-align p {
+  color: #6e6a8a;
+  padding: 0px 10px;
+}
+.cont-7-align p:hover {
+  background: linear-gradient(to right, #f1a513, #fd7825 100%);
+  color: #fff;
+  border-radius: 6px;
+  padding: 0px 10px;
+}
+.cadr-sz .card {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  margin-top: 20px;
+}
+.img-set {
+  width: 100%;
+  height: 46.5vh;
+  object-fit: cover;
+}
+.crd-body {
+  width: 100%;
+  height: 19vh;
+  object-fit: cover !important;
+}
+.card-sz:nth-child(2) {
+  margin-top: 20px;
+  border: 1px solid red;
+}
+.popping {
+  overflow: hidden;
+}
+.popping:hover {
+  /* box-shadow: inset 0px -10px 50px 0px #1032c9; */
+  box-shadow: 0 0 10px 6px rgb(27, 11, 11) inset;
+  z-index: 1;
+}
+.pop-up-card {
+  transition: all 0.5s ease-in-out;
+}
+.pop-up-card:hover {
+  transform: scale(1.09);
+  box-shadow: 5px 10px 20px 5px Green inset;
+}
+.custom-button-3 {
+  background: linear-gradient(to right, #8f86f1, #685be7 100%);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 55% !important;
+  padding: 11px 20px;
+  border-radius: 3px;
+}
+.custom-button-3:hover {
+  color: rgb(18, 18, 20);
+  background-color: #6459e6 !important;
+}
+.custom-button-3:active {
+  color: #fff;
+  background-color: #2916f5;
+}
+.l-height {
+  line-height: 59px;
+}
 .Gradient-bottom-text {
   background: linear-gradient(to right, #fe506a, #f99c4c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 800;
   font-size: 53px;
 }
 .input-row-1 {
@@ -790,6 +868,14 @@ span {
 .holder-col {
   background-color: #131e4e !important;
 }
+.holder-col:focus {
+  box-shadow: none !important;
+}
+
+.form-control {
+  outline: none !important;
+}
+
 .custom-button-last {
   background: linear-gradient(to right, #8f86f1, #685be7 100%);
   border-color: #3c3664;
