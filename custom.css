@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@700;800;900&display=swap");
 
 p,
 span {
@@ -340,6 +340,11 @@ span {
 .fredoka-text {
   font-family: "Nunito", sans-serif !important;
 }
+.font-topic {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 800;
+  font-size: 145%;
+}
 
 .needed-width {
   width: 60%;
@@ -675,8 +680,8 @@ span {
   display: flex;
   height: 5px !important;
   width: 5px !important;
-  right: 30px;
-  bottom: 30px;
+  right: 40px;
+  bottom: 50px;
 }
 .bg-5 {
   background-image: url(./images/background-5.png);
@@ -751,7 +756,7 @@ span {
   color: #6e6a8a;
 }
 .fontsize-small {
-  font-size: 60% !important;
+  font-size: 58% !important;
 }
 .font-semi-big {
   font-size: 105% !important;
@@ -809,22 +814,33 @@ span {
   transform: scale(1.09);
   box-shadow: 5px 10px 20px 5px Green inset;
 }
-.custom-button-3 {
-  background: linear-gradient(to right, #8f86f1, #685be7 100%);
+.gradient-btn {
+  position: relative;
+  min-height: 38px;
+  color: #fff;
+  min-width: 95px;
+  background-image: linear-gradient(to right, #8f86f1, #5140e7);
+  z-index: 1;
+  border-radius: 4px;
   border: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 55% !important;
-  padding: 11px 20px;
-  border-radius: 3px;
+  font-size: 8px !important;
 }
-.custom-button-3:hover {
-  color: rgb(18, 18, 20);
-  background-color: #6459e6 !important;
+
+.gradient-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to left, #8f86f1, #5645eb);
+  border-radius: 4px;
+  z-index: -1;
+  transition: opacity 0.4s linear;
+  opacity: 0;
 }
-.custom-button-3:active {
-  color: #fff;
-  background-color: #2916f5;
+.gradient-btn:hover::before {
+  opacity: 1;
 }
 .l-height {
   line-height: 59px;
@@ -838,12 +854,13 @@ span {
   font-size: 53px;
 }
 .input-row-1 {
-  width: 212px !important;
+  width: 210px !important;
   background-color: #22276c !important;
   border-color: #6c6f9c !important;
 }
 .input-row-3 {
   height: 85px !important;
+  width: 425px !important;
   background-color: #22276c !important;
   border-color: #6c6f9c !important;
 }
@@ -1156,7 +1173,7 @@ span {
 /* floating IMG End*/
 .img-sze {
   height: 25px;
-  width: 120px;
+  width: 100px;
 }
 .inp-col::placeholder {
   color: #fff !important;
