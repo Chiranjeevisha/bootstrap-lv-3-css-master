@@ -37,6 +37,10 @@ span {
     position: absolute;
     bottom: 55px;
   }
+  .cont-end {
+    display: flex;
+    justify-content: end;
+  }
 }
 .justify-content-end {
   justify-content: end;
@@ -90,7 +94,7 @@ li a {
 }
 
 .move-top {
-  margin-top: -40px !important;
+  margin-top: -30px !important;
 }
 .move-this-top {
   position: absolute;
@@ -100,6 +104,9 @@ li a {
   .move-this-top {
     font-size: 13px;
     margin-right: 20px !important;
+  }
+  .move-top {
+    margin-top: -60px !important;
   }
 }
 .gradient-top-text {
@@ -552,19 +559,22 @@ li a {
     padding: 11px 140px !important;
     font-size: 95% !important;
     display: flex;
-    margin-left: 10px;
   }
 }
 @media only screen and (max-width: 600px) {
   .bg-3 {
     margin-top: 200px !important;
     background: url(./images/bg-3.png);
-    max-height: 200px;
+    max-height: 490px;
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .mob-pad-nothing {
+    padding: 0px !important;
+    margin: 0px !important;
   }
   .justify-content-sx-cntr {
     justify-content: center !important;
@@ -590,7 +600,7 @@ li a {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-weight: bold;
-  font-size: 55px;
+  font-size: 3.5vw;
 }
 
 .mini-font {
@@ -607,9 +617,25 @@ li a {
     font-weight: bold;
     font-size: 20px;
   }
+  .width-size {
+    width: 400px;
+  }
   .size-of-img {
-    height: 200px !important;
-    width: 200px !important;
+    height: 350px !important;
+    width: 350px !important;
+  }
+  .Gradient-mid-text {
+    background: #fe506a;
+    background: linear-gradient(to right, #fe506a 0%, #f99c4c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 8vw;
+  }
+  .mob-txt-white {
+    color: #fff;
   }
   .img-sz {
     width: 350px !important;
@@ -634,7 +660,7 @@ li a {
   }
   .fix-here {
     position: fixed;
-    top: 0px;
+    top: 10px;
     left: 87%;
     /* margin-left: -100%; */
     border: 5px solid red;
@@ -737,7 +763,7 @@ li a {
 }
 .fix-here {
   position: fixed;
-  top: 100px;
+  top: 110px;
   right: 0px;
 }
 .fix-here-2 {
@@ -759,13 +785,25 @@ li a {
 @media only screen and (max-width: 601px) {
   .bg-6 {
     background-image: url(./images/background-6.png);
-    height: 1900px;
+    height: 1700px;
     width: 106%;
+    padding-top: 100px;
 
     /* Center and scale the image nicely */
-    /* background-position: center; */
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .bg-5 {
+    background-image: url(./images/background-5.png);
+    width: 103%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .input-group {
+    margin-left: 12px;
   }
   .marg-lft {
     margin-left: -35px;
@@ -801,6 +839,28 @@ li a {
     display: flex !important;
     justify-content: center !important;
   }
+  .sz-set {
+    width: 100px !important;
+    height: 100px !important;
+    display: flex;
+    margin-top: 20px;
+    border: none;
+  }
+  .img-set {
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: cover;
+  }
+  .box-sz {
+    height: 190px !important;
+    width: 278px !important;
+  }
+  .mob-marg-lft {
+    text-align: center;
+  }
+  .mob-margin {
+    margin-bottom: 300px !important;
+  }
 }
 .bg-6 {
   background-image: url(./images/background-6.png);
@@ -820,8 +880,13 @@ li a {
   text-decoration: none !important;
 }
 .box-sz {
-  height: 210px !important;
-  width: 278px !important;
+  height: 210px;
+  width: 278px;
+}
+.shadow-lite {
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white,
+    0px 0px 2px 0px rgba(190, 190, 190, 0.8),
+    0px 0px 2px 0px rgba(190, 190, 190, 0.8);
 }
 .grey-text {
   color: #6e6a8a;
@@ -847,6 +912,18 @@ li a {
 .cont-7-align p:hover {
   background: linear-gradient(to right, #f1a513, #fd7825 100%);
   color: #fff;
+  padding: 0px 10px;
+  border-radius: 4px;
+}
+.cont-7-align p:focus {
+  background: linear-gradient(to right, #f1a513, #fd7825 100%);
+  color: #fff;
+  padding: 0px 10px;
+  border-radius: 4px;
+}
+.cont-7-align p:active {
+  background: linear-gradient(to right, #f1a513, #fd7825 100%) !important;
+  color: #fff !important;
   padding: 0px 10px;
   border-radius: 4px;
 }
@@ -877,17 +954,14 @@ li a {
 }
 @keyframes pop-in {
   0% {
-    margin-top: 0px;
     transform: scale(1);
     opacity: 0.1;
   }
   50% {
-    margin-top: 200px;
     transform: scale(0.1);
     opacity: 0;
   }
   100% {
-    margin-top: 0px;
     transform: scale(1);
     opacity: 1;
   }
