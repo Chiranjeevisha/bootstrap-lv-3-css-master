@@ -847,33 +847,53 @@ li a {
 .cont-7-align p:hover {
   background: linear-gradient(to right, #f1a513, #fd7825 100%);
   color: #fff;
-  border-radius: 6px;
   padding: 0px 10px;
+  border-radius: 4px;
 }
-.cont-7-align .actv-btn {
-  background: linear-gradient(to right, #f1a513, #fd7825 100%);
-  color: #fff;
-  border-radius: 6px;
+.actve {
+  background: linear-gradient(to right, #f1a513, #fd7825 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
   padding: 0px 10px;
 }
 .sz-set {
-  width: 400px !important;
-  height: 350px;
+  width: 395px !important;
+  height: 330px;
   display: flex;
   margin-top: 20px;
-  border: 1px solid red;
+  border: none;
 }
 .img-set {
   width: 100%;
-  height: 46.5vh;
+  height: 53.5vh;
   object-fit: cover;
 }
 .popping {
   overflow: hidden;
+  animation-name: pop-in;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
 }
+@keyframes pop-in {
+  0% {
+    margin-top: 0px;
+    transform: scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    margin-top: 200px;
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .popping:hover {
-  /* box-shadow: inset 0px -10px 50px 0px #1032c9; */
-  box-shadow: 0 0 10px 6px rgb(27, 11, 11) inset;
   z-index: 1;
 }
 .pop-up-card {
@@ -881,7 +901,6 @@ li a {
 }
 .pop-up-card:hover {
   transform: scale(1.09);
-  box-shadow: 5px 10px 20px 5px Green inset;
 }
 .gradient-btn {
   position: relative;
@@ -1267,6 +1286,7 @@ textarea {
   right: 290px;
   bottom: 17px;
 }
+
 /* sample */
 .filterDiv {
   color: #ffffff;
