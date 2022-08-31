@@ -946,11 +946,10 @@ li a {
     justify-content: center !important;
   }
   .sz-set {
-    width: 100px !important;
+    width: 50px !important;
     height: 100px !important;
-    display: flex;
-    margin-top: 20px;
-    border: none;
+    display: flex !important;
+    flex-flow: column !important;
   }
   .img-set {
     width: 100px !important;
@@ -1463,9 +1462,14 @@ textarea {
   bottom: 17px;
 }
 
-/* sample */
+/* Filter-Data */
 .filterDiv {
+  float: left;
   color: #ffffff;
+  width: 180px;
+  line-height: 70px;
+  text-align: center;
+  margin: 2px;
   display: none;
 }
 
@@ -1476,10 +1480,39 @@ textarea {
 .container {
   margin-top: 20px;
   overflow: hidden;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 601px) {
+  .container {
+    margin-left: 100px;
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+  }
+}
+.btons {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
 }
 
+.btons:hover {
+  background-color: #ddd;
+}
+
+.btons.activ {
+  background-color: #666;
+  color: white;
+}
+/* Filter-Data End*/
+
 /* btns-active*/
-.btons {
+/* .btons {
   border: none;
   outline: none;
   padding: 1.5px 10px;
@@ -1487,12 +1520,12 @@ textarea {
 
   cursor: pointer;
   font-size: 18px;
-}
+} */
 
 /* Style the active class, and buttons on mouse-over */
-.activ,
+/* .activ,
 .btons:hover {
   background: linear-gradient(to right, #f1a911 0%, #ff7826 100%);
   color: white;
-}
+} */
 /* btns-active End */

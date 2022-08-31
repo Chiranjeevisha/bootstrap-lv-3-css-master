@@ -839,8 +839,8 @@
     <div class="row">
     <div class="col-md-2 col-0 gx-0 d-none d-sm-block"></div>
     <div class="col-md-8 col-12">
-      <div class="row d-flex justify-content-center flex-row">
-        <div class="col-md-6 col-4 sz-set rounded-5 popping filterDiv Branding Marketing me-4 p-0">
+      <div class="row containr d-flex flex-row">
+        <!-- <div class="col-md-6 col-4 sz-set rounded-5 popping filterDiv Branding Marketing me-4 p-0">
           <img class="img-set rounded-5 pop-up-card" src="./images/1st-img.jpg" />
         </div>
         <div class="col-md-6 col-4 sz-set rounded-5 popping filterDiv Branding SEO mt-4  p-0">
@@ -851,6 +851,18 @@
       </div>
       <div class="col-md-6 col-4 sz-set rounded-5 popping filterDiv SEO ms-4 mt-4 p-0">
         <img class="img-set pop-up-card rounded-5" src="./images/4th-img.jpg" />
+      </div> -->
+      <div class="col-5 filterDiv Branding Marketings">
+        <img class="img-set rounded-5" src="./images/1st-img.jpg" />
+      </div>
+      <div class="col-5 filterDiv Branding SEO">
+        <img class="img-set rounded-5" src="./images/2nd-img.jpg" />
+      </div>
+      <div class="col-5 filterDiv Marketing Web">
+        <img class="img-set rounded-5" src="./images/3rd-img.jpg" />
+      </div>
+      <div class="col-5 filterDiv SEO">
+        <img class="img-set rounded-5" src="./images/4th-img.jpg" />
       </div>
       </div>
     </div> 
@@ -1173,39 +1185,48 @@
   
     <!-- filter Data -->
     <script>
-      filterSelection("all")
-    function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("filterDiv");
-      if (c == "all") c = "";
-      for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-      }
-    }
-    
-    function w3AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-      }
-    }
-    
-    function w3RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1);     
-        }
-      }
-      element.className = arr1.join(" ");
-    }
-    
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btons");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
     </script>
     
     <!-- Owl Carousel JS -->
@@ -1232,16 +1253,16 @@
      
 </script>
 <script>
-  // act-buttons
-var header = document.getElementById("myActiv");
-var btns = header.getElementsByClassName("btons");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("activ");
-  current[0].className = current[0].className.replace(" activ", "");
-  this.className += " activ";
-  });
-}
+  // actve-buttons
+// var header = document.getElementById("myActiv");
+// var btns = header.getElementsByClassName("btons");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//   var current = document.getElementsByClassName("activ");
+//   current[0].className = current[0].className.replace(" activ", "");
+//   this.className += " activ";
+//   });
+// }
 </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
