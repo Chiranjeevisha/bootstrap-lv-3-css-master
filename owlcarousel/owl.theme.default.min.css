@@ -39,7 +39,7 @@
   margin-top: 40px;
 }
 .owl-dots {
-  margin-right: 280px !important;
+  margin-right: 280px;
 }
 .owl-theme .owl-dots .owl-dot span {
   width: 2px !important;
@@ -56,4 +56,9 @@
 .owl-theme .owl-dots span {
   background: #6b5fe9;
   padding: 4px 8px;
+}
+@media only screen and (max-width: 600px) {
+  .owl-dots {
+    margin-right: -50px;
+  }
 }

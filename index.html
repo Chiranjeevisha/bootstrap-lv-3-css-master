@@ -570,13 +570,14 @@
          <!-- Back big Word -->
      <div class="row gx-0">
       <div class=" d-flex justify-content-center relative-parent"><b class="background-word">DIGITAL</b> 
-         <div class=" d-flex flex-column mt-5 pt-5 fix-here">
+        <div class=" d-flex flex-column mt-5 pt-5 fix-here">
           <i class="bi bi-tv mini-icon-1 pop-up-icon"></i>
           <i class="bi bi-cart2 mini-icon-2 pop-up-icon"></i>
           <i class="bi bi-life-preserver mini-icon-3 pop-up-icon"></i>
           <i class="bi bi-pencil-square mini-icon-4 pop-up-icon"></i>
       </div>
     </div>
+  
         <!-- Big Top Sentances -->
 <div class="row  mt-4 lh-sm">
   <div class="col-md-12 col-12 d-flex justify-content-center z-index mob-gradient-top-text mt-3"> <p class="gradient-top-text mob-tx-sz"><b>SEO Marketing</b></p></div>
@@ -736,7 +737,6 @@
                 <h5 class="card-title text-blue fw-bold fs-6">CONSULTING</h5>
                 <p class="card-text text-start other-blue-text fontsize-8">Delectus recteque has ne, no pro tation commodo. Ea libris utamur vix, in sumo augue soluta vis.</p>    
               </div>
-              
             </div>
             </div>
         </div>
@@ -812,7 +812,7 @@
    <!-- container-6 End -->
 
    <!-- container-7 -->
-   <div class="bg-5 mt-5 mb-5 pb-5 gx-0">
+   <div class="bg-5 mt-5 mb-5 pb-5">
     <div class="row gx-0">
       <div class="col-md-2 col-0"></div>
       <div class="col-md-8 col-12 mt-3">
@@ -825,22 +825,22 @@
       <div class="col-4"></div>
       <div class="col-4">
           <div class="d-flex justify-content-around" >
-            <ul id="myBtnContainer border-0" class="cont-7-align d-flex flex-row ps-0 mt-2 pb-0 mb-0" >
-              <p class="btn actve fontsize-8 mx-2 pb-1" onclick="filterSelection('all')">All</p>
-              <p class="btn fontsize-8 mx-2 popping" onclick="filterSelection('Branding')">Branding</p>
-              <p class="btn fontsize-8 mx-2 " onclick="filterSelection('Marketing')">Marketing</p>
-              <p class="btn fontsize-8 mx-2 " onclick="filterSelection('SEO')">SEO</p>
-              <p class="btn fontsize-8 mx-2 " onclick="filterSelection('Web')">Web</p>
+            <ul id="myActiv" class="d-flex flex-row ps-0 mt-2 pb-0 mb-0" >
+              <p class="btons activ fontsize-8 mx-2 pb-1" onclick="filterSelection('all')">All</p>
+              <p class="btons fontsize-8 mx-2 popping" onclick="filterSelection('Branding')">Branding</p>
+              <p class="btons fontsize-8 mx-2 " onclick="filterSelection('Marketing')">Marketing</p>
+              <p class="btons fontsize-8 mx-2 " onclick="filterSelection('SEO')">SEO</p>
+              <p class="btons fontsize-8 mx-2 " onclick="filterSelection('Web')">Web</p>
             </ul>
           </div>
       </div>
-      <div class="col-4"></div>
+      <div class="col-4 d-none d-sm-block"></div>
     </div>
     <div class="row">
     <div class="col-md-2 col-0 gx-0 d-none d-sm-block"></div>
     <div class="col-md-8 col-12">
       <div class="row d-flex justify-content-center flex-row">
-        <div class="col-md-6 col-12 sz-set rounded-5 popping filterDiv Branding Marketing me-4 p-0">
+        <div class="col-md-6 col-4 sz-set rounded-5 popping filterDiv Branding Marketing me-4 p-0">
           <img class="img-set rounded-5 pop-up-card" src="./images/1st-img.jpg" />
         </div>
         <div class="col-md-6 col-4 sz-set rounded-5 popping filterDiv Branding SEO mt-4  p-0">
@@ -991,12 +991,12 @@
           <!-- 1 -->
           <div class="cont-center col-md-4 col-12">
             <div class="col-change-hover mb-3">
-            <div class="card cont-center  hands-Img shadow-lite mx-2 box-sz border-0 mb-4">
+            <div class="card cont-center hands-Img shadow-lite mx-2 box-sz border-0 mb-4">
               <div class="card-body">
-                <h5 class="card-title fontsize-small fw-bold filt-none">August 2, 2020</h5>
-                <p class="card-text font-topic font-semi-big filt-none">How to Increase Your ROI Thorugh Scientific SEM?</p>
+                <h5 class="card-title fontsize-small fw-bold grey-text">August 2, 2020</h5>
+                <p class="card-text font-topic font-semi-big text-blue">How to Increase Your ROI Thorugh Scientific SEM?</p>
                  <div class="row">
-                <p class="col-6  fontsize-small fw-bolder mt-5 pt-3">READ MORE</p>
+                <p class="col-6 text-lite-blue fontsize-small fw-bolder mt-5 pt-3">READ MORE</p>
                 <i class="col-6 d-flex justify-content-end bi bi-share-fill mt-5 pt-3 icn-sz"></i>
               </div>
               </div>
@@ -1170,6 +1170,7 @@
     </div>
 
     <!-- JS From Here -->
+  
     <!-- filter Data -->
     <script>
       filterSelection("all")
@@ -1204,16 +1205,7 @@
       element.className = arr1.join(" ");
     }
     
-    // Add active class to the current button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
+
     </script>
     
     <!-- Owl Carousel JS -->
@@ -1237,11 +1229,19 @@
         }
     }
 })
-$(document).ready(function () {
-        $(".hands-Img").hover(function () {
-          $(".col-change-hover").css("border", "1px solid red !important");
-        });
-      });
+     
+</script>
+<script>
+  // act-buttons
+var header = document.getElementById("myActiv");
+var btns = header.getElementsByClassName("btons");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("activ");
+  current[0].className = current[0].className.replace(" activ", "");
+  this.className += " activ";
+  });
+}
 </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
