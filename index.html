@@ -916,19 +916,22 @@
       <div class="col-md-6 col-4 sz-set rounded-5 popping filterDiv SEO ms-4 mt-4 p-0">
         <img class="img-set pop-up-card rounded-5" src="./images/4th-img.jpg" />
       </div> -->
-      <div class="sz-set popping filterDiv Branding Marketings mx-4 px-0">
-        <img class="img-set pop-up-card" src="./images/1st-img.jpg" />
-       <p class="only-on-hover">Online Media Management</p>
-      </div>
-      <div class="sz-set popping filterDiv Branding Marketings mt-4 px-0">
-        <img class="img-set pop-up-card" src="./images/2nd-img.jpg" />
-      </div>
-      <div class=" sz-set popping filterDiv Marketing Web px-0">
-        <img class="img-set pop-up-card" src="./images/3rd-img.jpg" />
-      </div>
-      <div class="sz-set  popping filterDiv SEO px-0 mt-4 ms-4">
-        <img class="img-set pop-up-card" src="./images/4th-img.jpg" />
-      </div>
+    <div class="col-6 inner big-card-img-1 rounded-5 popping  filterDiv Branding Marketing me-4 px-3">
+        <img class="rounded-5 pop-up-card shadow-down" src="./images/1st-img.jpg"/>
+        <p class="only-on-hover-1 text-light mb-5">Online Media Management</p>
+    </div>
+    <div class="col-6 inner big-card-img-2 rounded-5 popping filterDiv Branding SEO mt-4 pt-1 px-1 mb-3">
+        <img class=" rounded-5 pop-up-card" src="./images/2nd-img.jpg"/>
+        <p class="only-on-hover-2 text-light mb-5">Mannix Marketing</p>
+    </div>
+    <div class="col-6 inner big-card-img-3 rounded-5  popping filterDiv Marketing Web me-4 px-3">
+      <img class="img-set rounded-5 pop-up-card" src="./images/3rd-img.jpg"/>
+        <p class="only-on-hover-3 text-light mb-5">Twice Profit Than Before</p>
+    </div>
+    <div class="col-6 inner big-card-img-4 rounded-5 popping filterDiv SEO mt-4 px-1">
+      <img class="img-set rounded-5 pop-up-card" src="./images/4th-img.jpg"/>
+        <p class="only-on-hover-4 text-light mb-5">SEO Optimizationt</p>
+    </div>
       </div>
     </div> 
     <div class="col-md-2 col-0 d-none d-sm-block"></div>
@@ -1480,6 +1483,40 @@ for (var i = 0; i < btns.length; i++) {
           $(".input-bx").css("display", "block");
         });
       });
+      $(document).ready(function(){
+        // big Card Sentences
+  $(".only-on-hover-1").hide();
+  $(".big-card-img-1").hover(function(){
+    $(".only-on-hover-1").show();
+  });
+   $(".big-card-img-1").mouseleave(function(){
+    $(".big-card-img-1 p").hide();
+  });
+  // 2
+  $(".only-on-hover-2").hide();
+  $(".big-card-img-2").hover(function(){
+    $(".big-card-img-2 p").show();
+  });
+   $(".big-card-img-2").mouseleave(function(){
+    $(".big-card-img-2 p").hide();
+  });
+  // 3
+  $(".only-on-hover-3").hide();
+   $(".big-card-img-3").hover(function(){
+    $(".big-card-img-3 p").show();
+  });
+   $(".big-card-img-3").mouseleave(function(){
+    $(".big-card-img-3 p").hide();
+  });
+  // 4
+  $(".only-on-hover-4").hide();
+  $(".big-card-img-4").hover(function(){
+    $(".big-card-img-4 p").show();
+  });
+   $(".big-card-img-4").mouseleave(function(){
+    $(".big-card-img-4 p").hide();
+  });
+});
     </script>
   </body>
 </html>
