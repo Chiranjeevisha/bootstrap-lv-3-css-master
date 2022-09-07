@@ -1556,6 +1556,21 @@ textarea {
     display: flex;
     flex-direction: column;
   }
+  .picture-sz{
+    height: 50% !important;
+    border-radius: 8%;
+  }
+  .big-card-img-1{
+    position: relative; 
+
+    height: 50%;
+   }
+   .only-on-hover-2{
+    display: none;
+   } 
+   .shadow-down{
+    box-shadow: inset 0px 0px 0px 0px;
+   }
 }
 .btons {
   border: none;
@@ -1920,16 +1935,18 @@ z-index: 1;
   }
 }
 /* BG Dot Colors */
-.one-edge-shadow {
-  -moz-box-shadow: inset 0 -10px 40px -10px #000000;
-  -webkit-box-shadow: inset 0 -10px 10px 0px #000000;
-  box-shadow: inset 0 -30px 20px -10px #3d15cf;
-}
+.big-card-img-1{
+  position: relative; 
+  width: 420px !important;
+  height: 340px;
+ }
   .only-on-hover-1{
     position: absolute;
-    left: 5%;
+   left: 0px;
+  padding: 0px 50px;
     bottom: -15% !important;
     display: inline-flex;
+    width: 100%;
     }
     .big-card-img-2{
        position: relative; 
@@ -1938,9 +1955,11 @@ z-index: 1;
       }
       .only-on-hover-2{
         position: absolute;
-        left: 5%;
-        bottom: -15% !important;
-        display: inline-flex;
+        left: 0px;
+       padding: 0px 50px;
+         bottom: -15% !important;
+         display: inline-flex;
+         width: 100%;
         }
     .big-card-img-3{
        position: relative; 
@@ -1949,9 +1968,11 @@ z-index: 1;
       }
       .only-on-hover-3{
         position: absolute;
-        left: 5%;
-        bottom: -15% !important;
-        display: inline-flex;
+        left: 0px;
+       padding: 0px 50px;
+         bottom: -15% !important;
+         display: inline-flex;
+         width: 100%;
         }
     .big-card-img-4{
        position: relative; 
@@ -1960,9 +1981,11 @@ z-index: 1;
       }
       .only-on-hover-4{
         position: absolute;
-        left: 5%;
-        bottom: -15% !important;
-        display: inline-flex;
+        left: 0px;
+       padding: 0px 50px;
+         bottom: -15% !important;
+         display: inline-flex;
+         width: 100%;
         }
         .inner{
           overflow: hidden;
@@ -1989,7 +2012,10 @@ z-index: 1;
           transform: scale(1.11);
         }
         .shadow-down{
-          box-shadow: inset 0 -25px 30px -12px #2436bd;
+          box-shadow: inset 0px -150px 79px -83px #2865D6;
+        }
+        .picture-sz{
+          height: 100%;
         }
 .text-swan:hover .fontsize-small{
 color: #fff !important;
@@ -1997,3 +2023,12 @@ color: #fff !important;
 .text-swan:hover .font-semi-big{
   color: #fff !important;
 }
+ .big-card-img-1 p, 
+ .big-card-img-2 p,
+ .big-card-img-3 p,
+ .big-card-img-4 p{
+padding-top: 80px;
+}
+/* Button Bounce */
+
+/* button Bounce End */
