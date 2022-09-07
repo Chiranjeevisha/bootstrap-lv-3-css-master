@@ -686,15 +686,7 @@ li a {
   font-weight: bold;
   font-size: 3.5vw;
 }
-.cont-center:hover .grey-text {
-  color: white !important;
-}
-.cont-center:hover .font-semi-big {
-  color: white !important;
-}
-.cont-center:hover .text-lite-blue {
-  color: white !important;
-}
+
 .mini-font {
   font-size: 50%;
 }
@@ -765,25 +757,46 @@ li a {
   }
 }
 .hands-Img {
-  transition: all 0.2s ease-in;
+
   background-position: center center;
   overflow: hidden;
-  transform: scale(1);
+  width: 100% !important;
+  height: 208px !important;
+  transition: all 0.4s ease-in;
 }
 .hands-Img:hover {
   background-image: url(./images/hands.jpg);
-  filter: opacity(97%) brightness(100%) grayscale(50%);
-  transform: scale(1.05);
+  filter: opacity(97%) brightness(80%) grayscale(50%);
+  transform: scale(1.09);
+  color: #fff !important;
+}
+.Teach-Img{
+  transition: all 0.2s ease-in;
+  background-position: center center;
+  overflow: hidden;
+  width: 100% !important;
+  height: 208px !important;
+  transition: all 0.4s ease-in;
 }
 .Teach-Img:hover {
   background-image: url(./images/Teach.jpg);
   background-position: center;
   filter: opacity(97%) brightness(100%) grayscale(50%);
+  transform: scale(1.09);
+}
+.specsTable-Img{
+  transition: all 0.2s ease-in;
+  background-position: center center;
+  overflow: hidden;
+  width: 100% !important;
+  height: 208px !important;
+  transition: all 0.4s ease-in;
 }
 .specsTable-Img:hover {
   background-image: url(./images/specs-on-table.jpg);
   background-position: center;
   filter: opacity(97%) brightness(100%) grayscale(50%);
+  transform: scale(1.09);
 }
 .size-of-img {
   width: 90%;
@@ -1910,13 +1923,8 @@ z-index: 1;
 .one-edge-shadow {
   -moz-box-shadow: inset 0 -10px 40px -10px #000000;
   -webkit-box-shadow: inset 0 -10px 10px 0px #000000;
-  box-shadow: inset 0 -30px 20px -10px #000000;
+  box-shadow: inset 0 -30px 20px -10px #3d15cf;
 }
-.big-card-img-1{
-   position: relative; 
-   width: 420px !important;
-   height: 340px;
-  }
   .only-on-hover-1{
     position: absolute;
     left: 5%;
@@ -1924,7 +1932,6 @@ z-index: 1;
     display: inline-flex;
     }
     .big-card-img-2{
-      background-image: url("./images/2nd-img.jpg");
        position: relative; 
        width: 420px !important;
        height: 340px;
@@ -1936,7 +1943,6 @@ z-index: 1;
         display: inline-flex;
         }
     .big-card-img-3{
-      background-image: url("./images/3rd-img.jpg");
        position: relative; 
        width: 420px !important;
        height: 340px;
@@ -1948,7 +1954,6 @@ z-index: 1;
         display: inline-flex;
         }
     .big-card-img-4{
-      background-image: url("./images/4th-img.jpg");
        position: relative; 
        width: 420px !important;
        height: 340px;
@@ -1961,14 +1966,34 @@ z-index: 1;
         }
         .inner{
           overflow: hidden;
+          position: relative; 
+          width: 420px !important;
+          height: 340px;
+          object-fit: cover;
         }
         .inner img{
           transition: all 0.5s ease;
         }
         .inner:hover img {
           transform: scale(1.11);
+        }
+        .prevent-overflow{
+          overflow: hidden;
+          position: relative; 
+          object-fit: cover;
+        }
+        .inner .hands-Img{
+          transition: all 0.5s ease;
+        }
+        .inner:hover .hands-Img {
+          transform: scale(1.11);
+        }
+        .shadow-down{
           box-shadow: inset 0 -25px 30px -12px #2436bd;
         }
-        /* .shadow-down{
-          box-shadow: inset 0 -25px 30px -12px #2436bd;
-        } */
+.text-swan:hover .fontsize-small{
+color: #fff !important;
+}
+.text-swan:hover .font-semi-big{
+  color: #fff !important;
+}
