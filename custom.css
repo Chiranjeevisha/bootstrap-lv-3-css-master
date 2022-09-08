@@ -757,7 +757,6 @@ li a {
   }
 }
 .hands-Img {
-
   background-position: center center;
   overflow: hidden;
   width: 100% !important;
@@ -765,8 +764,8 @@ li a {
   transition: all 0.4s ease-in;
 }
 .hands-Img:hover {
-  background-image: url(./images/hands.jpg);
-  filter: opacity(97%) brightness(80%) grayscale(50%);
+  background-image: url(./images/hands-1.jpg);
+  filter: opacity(95%) brightness(100%) blur(50%);
   transform: scale(1.09);
   color: #fff !important;
 }
@@ -779,9 +778,9 @@ li a {
   transition: all 0.4s ease-in;
 }
 .Teach-Img:hover {
-  background-image: url(./images/Teach.jpg);
+  background-image: url(./images/Teach-1.jpg);
   background-position: center;
-  filter: opacity(97%) brightness(100%) grayscale(50%);
+  filter: opacity(95%) brightness(90%);
   transform: scale(1.09);
 }
 .specsTable-Img{
@@ -793,10 +792,18 @@ li a {
   transition: all 0.4s ease-in;
 }
 .specsTable-Img:hover {
-  background-image: url(./images/specs-on-table.jpg);
+  background-image: url(./images/specs-on-table-11.jpg);
   background-position: center;
-  filter: opacity(97%) brightness(100%) grayscale(50%);
+  filter: opacity(95%) brightness(100%);
   transform: scale(1.09);
+}
+.non-movable{
+  user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
 }
 .size-of-img {
   width: 90%;
@@ -1372,7 +1379,7 @@ li a {
   animation-name: floating-3;
   animation-duration: 15s;
   animation-iteration-count: infinite;
-  animation-timing-function:ease-in-out;
+  animation-timing-function:linear;
   margin-left: 30px;
   margin-top: 5px;
 }
@@ -1380,18 +1387,23 @@ li a {
 @keyframes floating-3 {
   0% {
     transform: translate(0px, 0px);
+   
   }
   25% {
-    transform: translate(0.5rem, 1ex);
+    transform: translate(8px, 1ex);
+
   }
   50% {
     transform: translate(0rem, 2.5ex);
+   
   }
   75% {
-    transform: translate(0.5rem, 1ex);
+    transform: translate(8px, 1ex);
+   
   }
   100% {
     transform: translate(0px, 0px);
+   
   }
 }
 /* float 4 */
@@ -1557,20 +1569,33 @@ textarea {
     flex-direction: column;
   }
   .picture-sz{
-    height: 50% !important;
+    height: 70% !important;
     border-radius: 8%;
   }
-  .big-card-img-1{
-    position: relative; 
-
-    height: 50%;
-   }
-   .only-on-hover-2{
-    display: none;
+  .only-on-hover-1,
+  .only-on-hover-2,
+   .only-on-hover-3,
+   .only-on-hover-4{
+    display: none !important;
    } 
    .shadow-down{
     box-shadow: inset 0px 0px 0px 0px;
    }
+   .marg-img-1,
+   .marg-img-2,
+   .marg-img-4{
+margin: 0px !important;
+   }
+}
+.marg-img-1{
+margin-right: 17px;
+}
+.marg-img-2{
+margin-top: 17px !important;
+}
+.marg-img-4{
+  margin-top: 17px !important;
+  margin-left: 17px;
 }
 .btons {
   border: none;
@@ -1591,7 +1616,13 @@ textarea {
   color: white;
 }
 /* Filter-Data End*/
-
+.text-fix{
+  position: relative;
+  bottom: 10px;
+  top: 100px;
+  left: 50px;
+  right: 10px;
+}
 /* BG Dot Colors */
 .dot-container .dott1{
   position: relative;
@@ -1947,6 +1978,7 @@ z-index: 1;
     bottom: -15% !important;
     display: inline-flex;
     width: 100%;
+    box-shadow: inset 0px -150px 79px -83px #2865D6;
     }
     .big-card-img-2{
        position: relative; 
@@ -1960,6 +1992,7 @@ z-index: 1;
          bottom: -15% !important;
          display: inline-flex;
          width: 100%;
+         box-shadow: inset 0px -150px 79px -83px #2865D6;
         }
     .big-card-img-3{
        position: relative; 
@@ -1973,6 +2006,7 @@ z-index: 1;
          bottom: -15% !important;
          display: inline-flex;
          width: 100%;
+         box-shadow: inset 0px -150px 79px -83px #2865D6;
         }
     .big-card-img-4{
        position: relative; 
@@ -1986,6 +2020,7 @@ z-index: 1;
          bottom: -15% !important;
          display: inline-flex;
          width: 100%;
+         box-shadow: inset 0px -150px 79px -83px #2865D6;
         }
         .inner{
           overflow: hidden;
@@ -2010,9 +2045,6 @@ z-index: 1;
         }
         .inner:hover .hands-Img {
           transform: scale(1.11);
-        }
-        .shadow-down{
-          box-shadow: inset 0px -150px 79px -83px #2865D6;
         }
         .picture-sz{
           height: 100%;
