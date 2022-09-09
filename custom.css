@@ -571,6 +571,16 @@ li a {
     transition: all 0.2s ease-in-out;
     margin-bottom: 20px;
   }
+  .custom-button {
+    border-color: #3c3664;
+    color: #3c3664;
+    font-weight: bold;
+    font-size: 55% !important;
+    padding: 10px 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: none;
+  }
 }
 .miniIcon-3:hover {
   transform: scale(1.19);
@@ -1583,6 +1593,18 @@ textarea {
    .marg-img-4{
 margin: 0px !important;
    }
+   .button-57 {
+    position: relative;
+    overflow: hidden;
+    border:none;
+    color: #18181a;
+    padding: 7px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    touch-action: manipulation;
+  }
 }
 .marg-img-1{
 margin-right: 17px;
@@ -2064,7 +2086,7 @@ padding-top: 80px;
   overflow: hidden;
   border:none;
   color: #18181a;
-  padding: 7px 20px;
+  padding: 8px 22px;
   border-radius: 4px;
   cursor: pointer;
   background: #fff;
@@ -2078,6 +2100,7 @@ padding-top: 80px;
   z-index: 10;
   font-size: 8px !important;
   color: #3c3664;
+  text-align: center;
 }
 
 .button-57 span:last-child {
