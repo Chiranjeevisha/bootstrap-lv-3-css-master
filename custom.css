@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@700;800;900&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@700;800;900&family=Roboto:wght@300;400;500&display=swap');
 
 body {
   overflow: hidden;
@@ -71,6 +71,7 @@ li a {
 .search-bar {
   display: none !important;
 }
+
 .page-icon-1 {
   height: 35px;
   width: 109px;
@@ -658,6 +659,10 @@ li a {
 .text-normal{
   font-size: small;
   font-weight: 300 !important;
+}
+.text-normal-2{
+  font-size:medium;
+  font-weight: 400 !important;
 }
 .letter-width {
   width: 280px;
@@ -2199,5 +2204,7 @@ padding-bottom: 12px;
 }
 /* Samp Butt End */
 .make-text-same p{
-  font-size: small;
+  font-size:73%;
+  font-weight: 400;
+
 }
