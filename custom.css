@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@700;800;900&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@700;800;900&family=Roboto:wght@300;500&display=swap');
 
 body {
   overflow: hidden;
@@ -287,9 +287,14 @@ li a {
 .mob-number-top {
   margin-left: px;
 }
-
+.numb-space{
+  letter-spacing: 4px !important;
+}
 .bi-list {
   margin-right: x !important;
+}
+.font-Montserrat{
+  font-family: "Montserrat", sans-serif;
 }
 /* drpdown */
 .dropbtn {
@@ -649,6 +654,10 @@ li a {
     justify-content: center;
     text-align: center;
     padding: 1px;
+}
+.text-normal{
+  font-size: small;
+  font-weight: 300 !important;
 }
 .letter-width {
   width: 280px;
@@ -1113,7 +1122,7 @@ user-select: none;
   font-size: 57% !important;
 }
 .font-semi-big {
-  font-size: 105% !important;
+  font-size: 97% !important;
 }
 .icn-sz {
   font-size: 55%;
@@ -1657,7 +1666,7 @@ margin-top: 17px !important;
 .btons {
   border: none;
   outline: none;
-  padding: 1px 8px;
+padding: 1px 8px;
   background-color: #fff;
   cursor: pointer;
   border-radius: 4px;
@@ -1666,11 +1675,15 @@ margin-top: 17px !important;
 .btons:hover {
   background: linear-gradient(to right, #f1aa18, #fe7825 100%);
   color: #fff;
+
 }
 
 .btons.activ {
   background: linear-gradient(to right, #f1aa18, #fe7825 100%);
   color: white;
+  display: flex;
+  text-align: center;
+ padding: 2px 8px;
 }
 /* Filter-Data End*/
 .text-fix{
@@ -2035,7 +2048,7 @@ z-index: 1;
     bottom: -15% !important;
     display: inline-flex;
     width: 100%;
-    box-shadow: inset 0px -150px 79px -83px #2865D6;
+    box-shadow: inset 0px -150px 82px -83px #7064f0;
     }
     .big-card-img-2{
        position: relative; 
@@ -2049,7 +2062,7 @@ z-index: 1;
          bottom: -15% !important;
          display: inline-flex;
          width: 100%;
-         box-shadow: inset 0px -150px 79px -83px #2865D6;
+         box-shadow: inset 0px -150px 82px -83px #7469ea;
         }
     .big-card-img-3{
        position: relative; 
@@ -2063,7 +2076,7 @@ z-index: 1;
          bottom: -15% !important;
          display: inline-flex;
          width: 100%;
-         box-shadow: inset 0px -150px 79px -83px #2865D6;
+         box-shadow: inset 0px -150px 82px -83px #7064f3;
         }
     .big-card-img-4{
        position: relative; 
@@ -2077,7 +2090,7 @@ z-index: 1;
          bottom: -15% !important;
          display: inline-flex;
          width: 100%;
-         box-shadow: inset 0px -150px 79px -83px #2865D6;
+         box-shadow: inset 0px -150px 82px -83px #7469ea;
         }
         .inner{
           overflow: hidden;
