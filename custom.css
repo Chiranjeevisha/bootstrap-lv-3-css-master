@@ -1055,6 +1055,9 @@ li a {
   .mob-margin {
     margin-bottom: 300px !important;
   }
+  .Gradient-bottom-text {
+    font-size: 45px !important;
+  }
 }
 .bg-6 {
   background-image: url(./images/background-6.png);
@@ -1190,7 +1193,6 @@ li a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Montserrat", sans-serif;
-
   font-size: 56px;
 }
 .input-row-1 {
@@ -1632,6 +1634,9 @@ textarea {
    .shadow-down{
     box-shadow: inset 0px 0px 0px 0px;
    }
+   .img-1 {
+    margin-left: 90px !important;
+   }
    .marg-img-1,
    .marg-img-2,
    .marg-img-4{
@@ -1648,6 +1653,9 @@ margin: 0px !important;
     background: #fff;
     user-select: none;
     touch-action: manipulation;
+  }
+  .margin-filter{
+    margin: 0px 10px;
   }
 }
 .marg-img-1{
@@ -1668,7 +1676,9 @@ padding: 1px 8px;
   cursor: pointer;
   border-radius: 4px;
 }
-
+.margin-filter{
+  margin: 0px 15px;
+}
 .btons:hover {
   background: linear-gradient(to right, #f1aa18, #fe7825 100%);
   color: #fff;
