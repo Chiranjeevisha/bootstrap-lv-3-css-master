@@ -55,7 +55,7 @@ span {
   background-image: linear-gradient(#2a8aa2, #102445) !important;
 }
 .fontsize-8 {
-  font-size: 12px !important;
+  font-size: 15px !important;
 }
 div > a {
   font-size: 73% !important;
@@ -105,7 +105,7 @@ li a {
 }
 .move-this-top-1 {
   position: absolute;
-  bottom: 65px;
+  bottom: 57px;
 }
 .move-this-top {
   position: absolute;
@@ -421,12 +421,11 @@ li a {
 .font-topic {
   font-family: "Nunito", sans-serif !important;
   font-weight: 800;
-  font-size: 145%;
+  font-size: 25px;
 }
 .font-topic-card {
   font-family: "Nunito", sans-serif !important;
   font-weight: 800;
-  font-size: 100%;
 }
 
 .needed-width {
@@ -489,7 +488,7 @@ li a {
   height: 160px;
   display: flex;
   justify-content: center;
-  bottom: 155px;
+  bottom: 175px;
   transition: all 0.2s ease-in-out;
 }
 .font-lite{
@@ -531,7 +530,7 @@ li a {
   height: 160px;
   display: flex;
   justify-content: center;
-  bottom: 155px;
+  bottom: 175px;
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 600px) {
@@ -562,7 +561,7 @@ li a {
   height: 160px;
   display: flex;
   justify-content: center;
-  bottom: 155px;
+  bottom: 175px;
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 600px) {
@@ -709,6 +708,7 @@ li a {
 .bg-3 {
   background: url(./images/bg-3.png);
   height: 62vh;
+  width: 103%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -2193,7 +2193,7 @@ padding-bottom: 12px;
 }
 /* Samp Butt End */
 .make-text-same p{
-  font-size:73%;
+  font-size:15px;
   font-weight: 400;
 }
 .height-fix{
