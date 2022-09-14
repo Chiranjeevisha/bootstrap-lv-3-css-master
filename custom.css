@@ -601,7 +601,7 @@ li a {
   border-color: #3c3664;
   color: #3c3664;
   font-weight: bold;
-  font-size: 9px !important;
+  font-size: 10px !important;
   padding: 13px 23px;
   border-radius: 4px;
   background-color: #fff;
@@ -618,7 +618,7 @@ li a {
   border-color: #3c3664;
   color: #3c3664;
   font-weight: bold;
-  font-size: 55% !important;
+  font-size: 9px !important;
   padding: 12px 20px;
   border-radius: 4px;
   background-color: #fff;
@@ -639,8 +639,8 @@ li a {
 .refresh-icon{
   font-size: small;
   position: absolute;
-   right:30px; 
-    top:50px;
+   right:35px; 
+    top:60px;
     background: #14c29a;
     border-radius: 90%;
     display: flex;
@@ -847,6 +847,7 @@ li a {
 .edit-this-card {
   font-weight: bold;
 }
+
 .sideIcon-size {
   width: 80px;
   height: 80px;
@@ -855,7 +856,7 @@ li a {
   width: 450px;
 }
 .border-wide {
-  width: 350px;
+  width: 395px;
   height: 150px !important;
   border-color: rgb(206, 203, 203);
 }
@@ -1115,9 +1116,11 @@ li a {
   font-size: 19px !important;
 }
 .icn-sz {
-  font-size: 55%;
+  font-size: 10px;
   -webkit-text-stroke: 1px;
   color: #cdcbd6;
+  margin-top: 80px !important;
+  padding-left: 65px !important;
 }
 .msg-icn-sz {
   font-size: 250%;
@@ -1160,7 +1163,7 @@ li a {
   z-index: 1;
   border-radius: 4px;
   border: none;
-  font-size: 8px !important;
+  font-size: 9px !important;
 }
 
 .gradient-btn::before {
@@ -1187,16 +1190,16 @@ li a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Montserrat", sans-serif;
-  font-size: 800;
-  font-size: 53px;
+
+  font-size: 56px;
 }
 .input-row-1 {
-  width: 150px;
+  height: 42px;
   background-color: #22276c !important;
   border-color: #6c6f9c !important;
 }
 .input-row-3 {
-  height: 85px !important;
+  height: 100px !important;
   width: 425px;
   background-color: #22276c !important;
   border-color: #6c6f9c !important;
@@ -1350,8 +1353,8 @@ li a {
 .img-1 {
   background-repeat: no-repeat;
   border-radius: 50% !important;
-  height: 50px;
-  width: 50px;
+  height: 65px;
+  width: 65px;
 }
 .floating-1 {
   animation-name: floating-1;
@@ -1383,8 +1386,8 @@ li a {
 .img-2 {
   border-radius: 50% !important;
   background-repeat: no-repeat;
-  height: 93px;
-  width: 93px;
+  height: 110px;
+  width: 110px;
 }
 .floating-2 {
   animation-name:floating-2;
@@ -1416,8 +1419,8 @@ li a {
 .img-3 {
   background-repeat: no-repeat;
   border-radius: 50% !important;
-  height: 40px;
-  width: 40px;
+  height: 52px;
+  width: 52px;
 }
 .floating-3 {
   animation-name: floating-3;
@@ -1454,8 +1457,8 @@ li a {
 .img-4 {
   background-repeat: no-repeat;
   border-radius: 50% !important;
-  height: 70px;
-  width: 70px;
+  height: 90px;
+  width: 90px;
 }
 .floating-4 {
   animation-name: floating-4;
@@ -1487,8 +1490,8 @@ li a {
 .img-5 {
   background-repeat: no-repeat;
   border-radius: 50% !important;
-  height: 60px;
-  width: 60px;
+  height: 75px;
+  width: 75px;
 }
 .floating-5 {
   animation-name: floating-5;
@@ -1519,8 +1522,8 @@ li a {
 .img-this-6 {
   background-repeat: no-repeat;
   border-radius: 50% !important;
-  height: 40px;
-  width: 40px;
+  height: 51px;
+  width: 51px;
 }
 .floating-6 {
   animation-name: floating-6;
@@ -1580,6 +1583,10 @@ textarea {
   position: absolute;
   bottom: -8%;
   left: 10%;
+}
+.assemble-icon{
+  margin-top: 76px !important;
+  padding-left: 25px !important;
 }
 /* Filter-Data */
 .filterDiv {
@@ -2196,5 +2203,5 @@ padding-bottom: 12px;
   font-weight: 400;
 }
 .height-fix{
-  height: 200px;
+  height: 240px;
 }
