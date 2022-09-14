@@ -55,14 +55,14 @@ span {
   background-image: linear-gradient(#2a8aa2, #102445) !important;
 }
 .fontsize-8 {
-  font-size: 15px !important;
+  font-size: 15px;
 }
 div > a {
-  font-size: 73% !important;
+  font-size: 13px !important;
   color: #6e6a8a;
 }
 li a {
-  font-size: 73% !important;
+  font-size: 13px ;
   color: #6e6a8a !important;
 }
 .marg-top {
@@ -74,7 +74,7 @@ li a {
 
 .page-icon-1 {
   height: 45px;
-  width: 125px;
+  width: 135px;
   margin-left: 10px;
   margin-bottom: 5px;
 }
@@ -117,10 +117,10 @@ li a {
   }
   .move-this-top-2 {
     position: absolute;
-    bottom: 70px;
+    bottom: 50px;
   }
   .move-top {
-    margin-top: -60px !important;
+    margin-top: -50px !important;
   }
 }
 .gradient-top-text {
@@ -262,6 +262,7 @@ li a {
   }
   .mob-tx-sz {
     font-size: 4vh;
+    margin-top: 71px;
   }
   .mob-absolute {
     position: absolute;
@@ -293,11 +294,14 @@ li a {
   background-color: #ffffff;
   color: black;
   padding: 7px 17px;
-  font-size: 16px;
+  font-size: 12px;
   border: none;
 }
 .add-padd {
   padding-right: 94px;
+}
+.widt{
+ width: 164px !important;
 }
 .dropdwn {
   position: relative;
@@ -316,7 +320,7 @@ li a {
   z-index: 1;
 }
 .dropdwn-content a {
-  padding: 12px 16px;
+  padding: 12px 22px;
   text-decoration: none;
   display: block;
   z-index: 1;
@@ -513,7 +517,7 @@ li a {
     height: 160px;
     display: flex;
     justify-content: center;
-    bottom: 560px !important;
+    bottom: 640px !important;
   }
 }
 .miniIcon-1:hover {
@@ -544,7 +548,7 @@ li a {
     height: 160px;
     display: flex;
     justify-content: center;
-    bottom: 315px;
+    bottom: 345px;
   }
 }
 .miniIcon-2:hover {
@@ -577,7 +581,7 @@ li a {
     justify-content: center;
     bottom: 65px;
     transition: all 0.2s ease-in-out;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .custom-button {
     border-color: #3c3664;
@@ -597,7 +601,7 @@ li a {
   border-color: #3c3664;
   color: #3c3664;
   font-weight: bold;
-  font-size: 55% !important;
+  font-size: 9px !important;
   padding: 13px 23px;
   border-radius: 4px;
   background-color: #fff;
@@ -708,7 +712,7 @@ li a {
 .bg-3 {
   background: url(./images/bg-3.png);
   height: 62vh;
-  width: 103%;
+  width: 106%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -835,14 +839,6 @@ li a {
   background-position: center;
   filter: opacity(95%) brightness(100%);
   transform: scale(1.09);
-}
-.non-movable{
-  user-drag: none; 
-user-select: none;
--moz-user-select: none;
--webkit-user-drag: none;
--webkit-user-select: none;
--ms-user-select: none;
 }
 .size-of-img {
   width: 90%;
@@ -1113,10 +1109,10 @@ user-select: none;
   color: #6e6a8a;
 }
 .fontsize-small {
-  font-size: 8px !important;
+  font-size: 10px !important;
 }
 .font-semi-big {
-  font-size: 17px !important;
+  font-size: 19px !important;
 }
 .icn-sz {
   font-size: 55%;
@@ -1218,7 +1214,7 @@ user-select: none;
   border-radius: 50%;
 }
 .medium-txt-sz {
-  font-size: small;
+  font-size: 13px;
 }
 .bg-blue {
   background-color: #0c183e;
@@ -2125,6 +2121,9 @@ color: #fff !important;
  .big-card-img-4 p{
 padding-top: 80px;
 }
+.height-fix{
+  height: 240px !important;
+}
 /* sample Button */
 .button-57 {
   position: relative;
@@ -2193,7 +2192,7 @@ padding-bottom: 12px;
 }
 /* Samp Butt End */
 .make-text-same p{
-  font-size:15px;
+  font-size:13px;
   font-weight: 400;
 }
 .height-fix{
