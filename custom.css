@@ -6,6 +6,12 @@ body {
   padding: 0;
   letter-spacing: 0.2px;
 }
+@media only screen and (max-width: 601px) {
+  body {
+    margin: 0px 0px !important;
+    padding: 0px;
+  }
+}
 p,
 span {
   font-family: 'Roboto', sans-serif;
@@ -122,6 +128,13 @@ li a {
   .move-top {
     margin-top: -50px !important;
   }
+  .top-txt-move{
+    top: 18px !important;
+  }
+}
+.top-txt-move{
+  position: absolute;
+  top: 180px;
 }
 .gradient-top-text {
   background: #fe506a;
@@ -129,9 +142,9 @@ li a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   font-size: 5vw;
   text-decoration: none;
-  margin-top: 60px;
 }
 .background-word {
   position: absolute;
@@ -1355,8 +1368,8 @@ li a {
 .img-1 {
   background-repeat: no-repeat;
   border-radius: 50% !important;
-  height: 65px;
-  width: 65px;
+  height: 55px;
+  width: 55px;
 }
 .floating-1 {
   animation-name: floating-1;
@@ -1421,8 +1434,8 @@ li a {
 .img-3 {
   background-repeat: no-repeat;
   border-radius: 50% !important;
-  height: 52px;
-  width: 52px;
+  height: 47px;
+  width: 47px;
 }
 .floating-3 {
   animation-name: floating-3;
@@ -1459,8 +1472,8 @@ li a {
 .img-4 {
   background-repeat: no-repeat;
   border-radius: 50% !important;
-  height: 90px;
-  width: 90px;
+  height: 80px;
+  width: 80px;
 }
 .floating-4 {
   animation-name: floating-4;
@@ -1492,8 +1505,8 @@ li a {
 .img-5 {
   background-repeat: no-repeat;
   border-radius: 50% !important;
-  height: 75px;
-  width: 75px;
+  height: 60px;
+  width: 60px;
 }
 .floating-5 {
   animation-name: floating-5;

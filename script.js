@@ -122,7 +122,7 @@ for (var i = 0; i < btns.length; i++) {
         var css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML =
-          ".typewrite > .wrap { font-size: 5vw; font-weight: bolder; z-index: 1;}";
+          ".typewrite > .wrap { font-size: 5vw; font-weight: bolde; z-index: 1;}";
         document.body.appendChild(css);
       };
     
