@@ -537,7 +537,7 @@ li a {
     height: 160px;
     display: flex;
     justify-content: center;
-    bottom: 640px !important;
+    bottom: 670px !important;
   }
 }
 .miniIcon-1:hover {
@@ -568,7 +568,7 @@ li a {
     height: 160px;
     display: flex;
     justify-content: center;
-    bottom: 345px;
+    bottom: 395px;
   }
 }
 .miniIcon-2:hover {
@@ -599,7 +599,7 @@ li a {
     height: 160px;
     display: flex;
     justify-content: center;
-    bottom: 65px;
+    bottom: 77px;
     transition: all 0.2s ease-in-out;
     margin-bottom: 40px;
   }
@@ -702,17 +702,24 @@ li a {
     left: 0px;
   }
   .mob-cust-btn {
-    padding: 11px 140px !important;
     font-size: 95% !important;
     display: flex;
   }
+}
+.space{
+  margin: 0px 20px;
+}
+.width-txt{
+  width: 290px;
+}
+.width-sze{
+  width: 270px;
 }
 @media only screen and (max-width: 600px) {
   .bg-3 {
     margin-top: 200px !important;
     background: url(./images/bg-3.png);
-    max-height: 490px;
-
+    height: 490px !important;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -793,9 +800,12 @@ li a {
     margin-left: 0px !important;
   }
   .border-wide {
-    width: 365px !important;
+    width: 335px !important;
     height: 150px !important;
     border-color: rgb(206, 203, 203);
+  }
+  .mob-mar{
+    margin-top: 350px !important;
   }
 }
 @media only screen and (max-width: 601px) {
@@ -1075,6 +1085,27 @@ li a {
   .Gradient-bottom-text {
     font-size: 45px !important;
   }
+  .floating-1{
+    margin-left: 200px !important;
+  }
+  .floating-2{
+    margin-left: 100px !important;
+  }
+  .floating-3{
+    margin-left: 100px !important;
+  }
+  .floating-4{
+    margin-left: 100px !important;
+  }
+  .floating-5{
+    margin-left: 100px !important;
+  }
+  .floating-6{
+    margin-left: 100px !important;
+  }
+}
+.txt-width{
+  width: 390px;
 }
 .bg-6 {
   background-image: url(./images/background-6.png);
@@ -1672,7 +1703,7 @@ margin: 0px !important;
     touch-action: manipulation;
   }
   .margin-filter{
-    margin: 0px 10px;
+    margin: 0px 8px !important;
   }
 }
 .marg-img-1{
