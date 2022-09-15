@@ -2,6 +2,7 @@
 
 body {
   overflow: hidden;
+  overflow-y: auto;
   margin: 0;
   padding: 0;
   letter-spacing: 0.2px;
@@ -11,7 +12,12 @@ body {
     padding: 0px;
     margin-right: 0px !important;
     overflow: hidden !important;
+    overflow-y: auto !important;
   }
+}
+.containter-fluid{
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 p,
 span {
@@ -39,7 +45,7 @@ span {
     background-image: url(./images/background-1.jpg);
 
     /* Full height */
-    height: 50vh;
+    height: 60vh;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -127,7 +133,7 @@ li a {
     bottom: 50px;
   }
   .move-top {
-    margin-top: -50px !important;
+    margin-top: 160px !important;
   }
   .top-txt-move{
     top: 18px !important;
@@ -741,7 +747,7 @@ li a {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-weight: bold;
-  font-size: 3.5vw;
+  font-size: 4.5vw;
 }
 
 .mini-font {
@@ -749,9 +755,6 @@ li a {
 }
 .width-size {
   width: 300px;
-}
-.width-sze {
-  width: 250px;
 }
 @media only screen and (max-width: 600px) {
   .size-of-text {
