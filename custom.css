@@ -108,7 +108,7 @@ li a {
 }
 
 .move-top {
-  margin-top: -30px !important;
+  margin-top: -40px !important;
 }
 .move-this-top-1 {
   position: absolute;
@@ -135,7 +135,7 @@ li a {
 }
 .top-txt-move{
   position: absolute;
-  top: 180px;
+  top: 170px;
 }
 .gradient-top-text {
   background: #fe506a;
