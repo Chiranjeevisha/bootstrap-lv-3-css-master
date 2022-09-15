@@ -470,7 +470,7 @@ li a {
   }
   .needing-width {
     margin-top: 60px !important;
-    width: 390px !important;
+    width: 370px !important;
   }
   .needing-width-2 {
     width: 100% !important;
@@ -526,7 +526,11 @@ li a {
 .notransition {
   transform: none;
 }
+
 @media only screen and (max-width: 600px) {
+  .mob-top-marg{
+    padding-top: 300px !important;
+  }
   .miniIcon-1 {
     background: url(./images/miniIcon1.png);
     max-height: 200px;
@@ -537,7 +541,7 @@ li a {
     height: 160px;
     display: flex;
     justify-content: center;
-    bottom: 670px !important;
+    bottom: 720px !important;
   }
 }
 .miniIcon-1:hover {
@@ -568,7 +572,7 @@ li a {
     height: 160px;
     display: flex;
     justify-content: center;
-    bottom: 395px;
+    bottom: 425px;
   }
 }
 .miniIcon-2:hover {
@@ -599,7 +603,7 @@ li a {
     height: 160px;
     display: flex;
     justify-content: center;
-    bottom: 77px;
+    bottom: 100px;
     transition: all 0.2s ease-in-out;
     margin-bottom: 40px;
   }
