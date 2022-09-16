@@ -805,7 +805,7 @@ li a {
   }
   .border-wide {
     width: 335px !important;
-    height: 150px !important;
+    height: 170px !important;
     border-color: rgb(206, 203, 203);
   }
   .mob-mar{
@@ -1081,7 +1081,7 @@ li a {
     width: 278px !important;
   }
   .mob-marg-lft {
-    text-align: center;
+    text-align: left;
   }
   .mob-margin {
     margin-bottom: 300px !important;
@@ -1106,6 +1106,9 @@ li a {
   }
   .floating-6{
     margin-left: 100px !important;
+  }
+  .mob-width{
+    width: 170px;
   }
 }
 .txt-width{
@@ -1339,7 +1342,7 @@ li a {
   color: #fff;
 }
 .socialM-icon-sz {
-  font-size: 70%;
+  font-size: 14px;
 }
 .plus-icon-small {
   font-size: 90%;
