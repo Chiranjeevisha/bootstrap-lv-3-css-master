@@ -52,10 +52,6 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .move-this-top-1 {
-    position: absolute;
-    bottom: 40px !important;
-  }
   .mob-nav-move {
     position: absolute;
     bottom: 55px;
@@ -132,15 +128,19 @@ li a {
   .move-this-top {
     font-size: 13px;
   }
+  .move-this-top-1 {
+    position: absolute;
+    bottom: 27px;
+  }
   .move-this-top-2 {
     position: absolute;
-    bottom: 35px;
+    bottom: 20px;
   }
   .move-top {
     margin-top: 160px !important;
   }
   .top-txt-move {
-    top: 38px !important;
+    top: 43px !important;
   }
 }
 .top-txt-move {
@@ -276,7 +276,7 @@ li a {
   .background-word {
     height: 250px !important;
     position: relative !important;
-    margin-top: 35px;
+    margin-top: 38px;
     font-size: 90px;
     opacity: 0.2;
   }
